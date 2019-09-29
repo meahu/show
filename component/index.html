@@ -4,15 +4,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>组件</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <div class="component">
         <h1 class="component-title">组•件</h1>
         <p>这些组件来源于布比项目开发总结。</p>
 
-        <h2 class="component-title">表格</h2>
+        <h2 class="h2 component-title">表格</h2>
         <p>表格，左右两列，有多行。第一行为表格列名称。表格默认左居中，行顶部有边框线。使用table-bordered属性，那么整个表格会被切割成小块且被边框线包围，具体水平方向不要边框线，或者表格底部不要边框线需要自己灵活书写样式；table-striped则是给表格奇数行加上背景，使得表格有条纹；table-hover则让鼠标悬停行显示背景色。表格知识两列，要多列也可用此组件灵活应用。</p>
         <div>
             <table class="table table-striped table-hover table-bordered">
@@ -23,7 +24,7 @@
             </table>
         </div>
 
-        <h2 class="component-title">表格列表</h2>
+        <h2 class="h2 component-title">表格列表</h2>
         <p>下面是一个表格组件。表格宽度填充父级元素，清除了td间间隔。</p>
         <div>
             <table class="table table-hover asset-list">
@@ -46,7 +47,7 @@
             </table>
         </div>
 
-        <h2 class="component-title">ul+li仿表格列表（flex版）</h2>
+        <h2 class="h2 component-title">ul+li仿表格列表（flex版）</h2>
         <p>表格用起来不怎么方便，那么还想用表格怎办，ul+li来帮忙。需要注意的是logo可改为文字，不影响整体使用；另外a标签作为连接可以去掉。</p>
         <div class="flex">
             <ul class="table-group">
@@ -87,7 +88,7 @@
             </ul>
         </div>
 
-        <h2 class="component-title">ul+li仿表格列表</h2>
+        <h2 class="h2 component-title">ul+li仿表格列表</h2>
         <p>表格用起来不怎么方便，那么还想用表格怎办，ul+li来帮忙。需要注意的是logo可改为文字，不影响整体使用；另外a标签作为连接可以去掉。</p>
         <div class="unflex">
             <ul class="table-group">
@@ -128,7 +129,7 @@
             </ul>
         </div>
         
-        <h2 class="component-title">信息列表</h2>
+        <h2 class="h2 component-title">信息列表</h2>
         <p>这是一个信息列表，普遍格式为：每一行有两个元素组成，一个是名称，另一个是名称内容。名称元素默认是100px，颜色为#666；内容部分占据剩余部分，颜色为#000。</p>
         <div>
             <ul class='info-group info-group-striped'>
@@ -151,7 +152,18 @@
             </ul>
         </div>
 
-        <h2 class="component-title">表单</h2>
+        <h2 class="h2 component-title">面板</h2>
+        <p>面板</p>
+        <div>
+            <div class="co-panel">
+                <div class="co-panel__header">
+                    <h2 class="co-panel__title">这里是标题</h2>
+                </div>
+                <div class="co-panel__body">这里是内容区</div>
+            </div>
+        </div>
+
+        <h2 class="h2 component-title">表单</h2>
         <p>默认的表单组合就长这样了，简单。有输入框名称，输入框，输入框提示（颜色为#666），当然还可能有提示。使用 sr-only 可以隐藏 control-name ；默认表单是form-group间与form-group内部上下垂直分布；form-inline使得表单form-group内部及form-group间所有元素排列在一行；form-horizontal使得form-group曾垂直分布，而form-group内部曾水平分布。</p>
         <div>
             <h3>默认表单</h3>
@@ -200,7 +212,7 @@
         </div>
 
 
-        <h2 class="component-title">弹出层页面</h2>
+        <h2 class="h2 component-title">弹出层页面</h2>
         <p>最简单的“弹出层页面”如下，由头部、主体、底部组成。</p>
         <div>
             <div class="layer">
@@ -315,7 +327,7 @@
         </div>
     </div>
 
-    <h2 class="component-title">分页</h2>
+    <h2 class="h2 component-title">分页</h2>
     <div>
         <ul class="pagination">
             <li>
@@ -330,6 +342,20 @@
                 <a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
             </li>
         </ul>
+    </div>
+
+    <h2 class="h2 component-title">表单</h2>
+    <div>
+        <div class="co-form">
+            <div class="co-form-item">
+                <div class="co-form-item__label">姓名</div>
+                <div class="co-form-item__content">
+                    <div class="co-input">
+                        <input class="co-input__inner" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
         
 

@@ -11,7 +11,7 @@ p{word-wrap:break-word;}
 .component{-webkit-border-radius:4px;  -moz-border-radius:4px;  border-radius:4px;  width:860px;  margin:40px auto;  padding:20px 60px;  background-color:#fff;  border:1px solid #e1e1e1;  color:#444 }
 .component .component-title{color:#111;}
 .component h1{margin:18px auto; text-align:center;}
-.component h2{margin:18px auto; font-size:18px; line-height:1.8;}
+.component .h2{margin:18px auto; font-size:18px; line-height:1.8;}
 .component h3{margin:18px auto; font-size:16px; line-height:1.8;}
 .component p{font-size:14px; text-indent:2em; line-height:1.6; margin:14px auto 10px }
 .component ol,.component ul{/*margin-bottom:10px;padding-left:2em;*/}
@@ -112,3 +112,34 @@ p{word-wrap:break-word;}
 .pagination li a:hover{background:#eee;}
 .pagination li.active a{color:#fff; background:#337ab7; border-color:#337ab7;}
 .pagination li.disabled a{cursor:not-allowed;}
+
+
+.co-panel {}
+.co-panel__header {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+.co-panel__header::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -8px;
+    width: 3px;
+    height: 18px;
+    background-color: #ff6600;
+    border-radius: 10px;
+}
+.co-panel__title {
+    display: inline-block;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.co-panel__body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+}
