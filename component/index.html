@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>组件</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+</head>
+<body>
+    <div class="component">
+        <h1 class="component-title">组•件</h1>
+        <p>这些组件来源于布比项目开发总结。</p>
+
+        <h2 class="component-title">表格</h2>
+        <p>表格，左右两列，有多行。第一行为表格列名称。表格默认左居中，行顶部有边框线。使用table-bordered属性，那么整个表格会被切割成小块且被边框线包围，具体水平方向不要边框线，或者表格底部不要边框线需要自己灵活书写样式；table-striped则是给表格奇数行加上背景，使得表格有条纹；table-hover则让鼠标悬停行显示背景色。表格知识两列，要多列也可用此组件灵活应用。</p>
+        <div>
+            <table class="table table-striped table-hover table-bordered">
+                <tr><th width="200">参数</th><th>说明</th></tr>
+                <tr><td>client_id</td><td>第三方用户唯一凭证，即appId</td></tr>
+                <tr><td>client_secret</td><td>第三方用户唯一凭证秘钥，即appkey</td></tr>
+                <tr><td>grant_type</td><td>获取access_token时需要填写的client_credentials</td></tr>
+            </table>
+        </div>
+
+        <h2 class="component-title">表格列表</h2>
+        <p>下面是一个表格组件。表格宽度填充父级元素，清除了td间间隔。</p>
+        <div>
+            <table class="table table-hover asset-list">
+                <tr>
+                    <td><a href="#"><img class="logo" src="image/touxiang.jpg"></a></td>
+                    <td><a href="#">开发币</a></td>
+                    <td><a href="#">资产描述：第三方用户唯一凭证，唯一凭证秘钥</a></td>
+                    <td class="number"><a href="#">1000</a></td>
+                    <td><a href="#">2016.01.01 12:12</a></td>
+                    <td><a href="trade.html"><i class="iconfont icon-exchange">1</i></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img class="logo" src="image/touxiang.jpg"></a></td>
+                    <td><a href="#">开发币</a></td>
+                    <td><a href="#">资产描述：第三方用户唯一凭证，唯一凭证秘钥</a></td>
+                    <td class="number"><a href="#">1000</a></td>
+                    <td><a href="#">2016.01.01 12:12</a></td>
+                    <td><a href="trade.html"><i class="iconfont icon-exchange">1</i></a></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2 class="component-title">ul+li仿表格列表（flex版）</h2>
+        <p>表格用起来不怎么方便，那么还想用表格怎办，ul+li来帮忙。需要注意的是logo可改为文字，不影响整体使用；另外a标签作为连接可以去掉。</p>
+        <div class="flex">
+            <ul class="table-group">
+                <li class="group-list">
+                    <ul class="list-group">
+                        <li class="list-item">资产ID</li>
+                        <li class="list-item">资产名称</li>
+                        <li class="list-item">交易时间</li>
+                        <li class="list-item">交易类型</li>
+                        <li class="list-item">对方信息</li>
+                        <li class="list-item">资产数量</li>
+                    </ul>                           
+                </li>
+                <li class="group-list">
+                    <a class="list-group-wrap" href="#">
+                        <ul class="list-group">
+                            <li class="list-item"><img class="logo" src="image/touxiang.jpg"></li>
+                            <li class="list-item">开发币开发币开发币哈</li>
+                            <li class="list-item">2016.01.01 12:12</li>
+                            <li class="list-item">收到</li>
+                            <li class="list-item">13631219482</li>
+                            <li class="list-item">1000</li>
+                        </ul>                           
+                    </a>
+                </li>
+                <li class="group-list">
+                    <a class="list-group-wrap" href="#">
+                        <ul class="list-group">
+                            <li class="list-item"><img class="logo" src="image/touxiang.jpg"></li>
+                            <li class="list-item">开发币开发币开发币哈</li>
+                            <li class="list-item">2016.01.01 12:12</li>
+                            <li class="list-item">收到</li>
+                            <li class="list-item">13631219482</li>
+                            <li class="list-item">1000</li>
+                        </ul>                           
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="component-title">ul+li仿表格列表</h2>
+        <p>表格用起来不怎么方便，那么还想用表格怎办，ul+li来帮忙。需要注意的是logo可改为文字，不影响整体使用；另外a标签作为连接可以去掉。</p>
+        <div class="unflex">
+            <ul class="table-group">
+                <li class="group-list">
+                    <ul class="list-group">
+                        <li class="list-item">资产ID</li>
+                        <li class="list-item">资产名称</li>
+                        <li class="list-item">交易时间</li>
+                        <li class="list-item">交易类型</li>
+                        <li class="list-item">对方信息</li>
+                        <li class="list-item">资产数量</li>
+                    </ul>                           
+                </li>
+                <li class="group-list">
+                    <a class="list-group-wrap" href="#">
+                        <ul class="list-group">
+                            <li class="list-item"><img class="logo" src="image/touxiang.jpg"></li>
+                            <li class="list-item">开发币开发币开发币哈</li>
+                            <li class="list-item">2016.01.01 12:12</li>
+                            <li class="list-item">收到</li>
+                            <li class="list-item">13631219482</li>
+                            <li class="list-item">1000</li>
+                        </ul>                           
+                    </a>
+                </li>
+                <li class="group-list">
+                    <a class="list-group-wrap" href="#">
+                        <ul class="list-group">
+                            <li class="list-item"><img class="logo" src="image/touxiang.jpg"></li>
+                            <li class="list-item">开发币开发币开发币哈</li>
+                            <li class="list-item">2016.01.01 12:12</li>
+                            <li class="list-item">收到</li>
+                            <li class="list-item">13631219482</li>
+                            <li class="list-item">1000</li>
+                        </ul>                           
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <h2 class="component-title">信息列表</h2>
+        <p>这是一个信息列表，普遍格式为：每一行有两个元素组成，一个是名称，另一个是名称内容。名称元素默认是100px，颜色为#666；内容部分占据剩余部分，颜色为#000。</p>
+        <div>
+            <ul class='info-group info-group-striped'>
+                <li>
+                    <label class="item-name">账号</label>
+                    <span class="item-info">186111111075</span>
+                </li>
+                <li>
+                    <label class="item-name">地址</label>
+                    <span class="item-info">jdmalNJAIL9104mmKMD8989ammjdOAMXHC</span>
+                </li>
+                <li>
+                    <label class="item-name">账号创建时间</label>
+                    <span class="item-info">2016-01-01</span>
+                </li>
+                <li>
+                    <label class="item-name">密钥</label>
+                    <span class="item-info">*********</span>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="component-title">表单</h2>
+        <p>默认的表单组合就长这样了，简单。有输入框名称，输入框，输入框提示（颜色为#666），当然还可能有提示。使用 sr-only 可以隐藏 control-name ；默认表单是form-group间与form-group内部上下垂直分布；form-inline使得表单form-group内部及form-group间所有元素排列在一行；form-horizontal使得form-group曾垂直分布，而form-group内部曾水平分布。</p>
+        <div>
+            <h3>默认表单</h3>
+            <form>
+                <div class="form-group">
+                    <label class="control-name" for="control1">Email address</label>
+                    <input class="form-control" id="control1" type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="control-name" for="control2">输入框名称</label>
+                    <input class="form-control" id="control2" type="text" placeholder="输入框">
+                    <span  class="control-tip">我是输入框提示</span>
+                </div>
+            </form>
+
+            <h3>使用“form-inline”属性</h3>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="control-name" for="control3">Email address</label>
+                    <input class="form-control" id="control3" type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="control-name" for="control4">输入框名称</label>
+                    <input class="form-control" id="control4" type="text" placeholder="输入框">
+                    <span  class="control-tip">我是输入框提示</span>
+                </div>
+            </form>
+
+            <h3>使用“form-horizontal”属性</h3>
+            <p>使用时，需自行给control-name设定宽度，及文字居中方式；需自行设定form-control宽度；control-tip紧随后面。</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-name" for="control5">资产名称</label>
+                    <input class="form-control" id="control5" type="email" placeholder="资产名称">
+                </div>
+                <div class="form-group">
+                    <label class="control-name" for="control6">资产单位（）</label>
+                    <input class="form-control" id="control6" type="text" placeholder="输入框">
+                    <span  class="control-tip">最多不超过10个汉字</span>
+                </div>
+            </form>
+
+            <h3>按钮</h3>
+            <p></p>
+            <a class="btn apply" href="javascript:;">我是按钮</a>
+        </div>
+
+
+        <h2 class="component-title">弹出层页面</h2>
+        <p>最简单的“弹出层页面”如下，由头部、主体、底部组成。</p>
+        <div>
+            <div class="layer">
+                <div class="layer-header">
+                    <i class="iconfont icon-close J-LayerClose"></i>
+                    <h1 class="tit">我是头部</h1>
+                </div>
+                <div class="layer-body">内容主体</div>
+                <div class="layer-footer">底部</div>
+        </div>
+
+        <p>给它添加内容：</p>
+        <div>
+            <div class="layer tradeLayer1">
+                <div class="layer-header">
+                    <i class="iconfont icon-close J-LayerClose"></i>
+                    <h1 class="tit">资产交易</h1>
+                </div>
+                <div class="layer-body">
+                    <ul class="info-group layer-trade">
+                       <li>
+                            <label class="item-name">资产名称</label>
+                            <span class="item-info">西山居100元优惠卡</span>
+                        </li> 
+                       <li>
+                           <label class="item-name">资产描述</label>
+                            <span class="item-info">西山居100元优惠卡</span>
+                       </li>
+                    </ul>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-name">转账至</label>
+                            <input class="form-control" name="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-name">转账数量</label>
+                            <input class="form-control" name="" type="text">
+                        </div>
+                        <p class="balance">余额 <span>500</span></p>
+                    </div>
+                </div>
+                <div class="layer-footer">
+                    <div class="btn-group">
+                        <a class="btn btn-cen" href="javascript:;">下一步</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p>第二步：</p>
+        <div>
+            <div class="layer tradeLayer2">
+                <div class="layer-header">
+                    <i class="iconfont icon-close J-LayerClose"></i>
+                    <h1 class="tit">资产交易</h1>
+                </div>
+                <div class="layer-body">
+                    <ul class='info-group info-group-striped trade-info'>
+                        <li>
+                            <label class="item-name">资产名称</label>
+                            <span class="item-info">西山居100元优惠卡</span>
+                        </li>
+                        <li>
+                            <label class="item-name">资产描述</label>
+                            <span class="item-info">西山居100元优惠卡</span>
+                        </li>
+                        <li>
+                            <label class="item-name">账号</label>
+                            <span class="item-info">1363121982</span>
+                        </li>
+                        <li>
+                            <label class="item-name">地址</label>
+                            <span class="bubi-addr item-info">bubiV8ibYCRL9W1D3LVLKQuAr9e4DAsim6VmWFHe</span>
+                        </li>
+                        <li>
+                            <label class="item-name">数量</label>
+                            <span class="item-info"><span>10<em>开发币</em></span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layer-footer">
+                    <div class="btn-group">
+                        <a class="btn btn-left" href="javascript:;">返 回</a>
+                        <a class="btn btn-right" href="javascript:;">下 一 步</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>第三步：</p>
+        <div>
+            <div class="layer tradeLayer3">
+                <div class="layer-header">
+                    <i class="iconfont icon-close J-LayerClose"></i>
+                    <h1 class="tit">资产交易</h1>
+                </div>
+                <div class="layer-body">
+                    <div class="form-horizontal asset-pwd">
+                        <div class="form-group">
+                            <label class="name">资产管理密码</label>
+                            <input class="form-control" name="">
+                            <span class="tip">资产管理密码即您的登录密码</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer-footer">
+                    <div class="btn-group">
+                        <a class="btn btn-cen" href="javascript:;">下一步</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="component-title">分页</h2>
+    <div>
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="active"><a href="#">5</a></li>
+            <li class="disabled">
+                <a href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+            </li>
+        </ul>
+    </div>
+        
+
+
+
+</body>
+</html>

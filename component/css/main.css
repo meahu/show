@@ -1,0 +1,114 @@
+*{margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+body{background-color:#ececec; font:14px "Microsoft Yahei",Arial,sans-serif;}
+a, a:hover, a:active, a:visited,a:focus{text-decoration:none; outline:0;}
+a{-webkit-transition:color 0.15s; -moz-transition:color 0.15s; -ms-transition:color 0.15s; -o-transition:color 0.15s; transition:color 0.15s;}
+img{border:none;}
+input, button{margin:0;font-size:12px;vertical-align:middle;}
+ol, ul, li{list-style:none;}
+p{word-wrap:break-word;}
+.hidden{display:none}
+
+.component{-webkit-border-radius:4px;  -moz-border-radius:4px;  border-radius:4px;  width:860px;  margin:40px auto;  padding:20px 60px;  background-color:#fff;  border:1px solid #e1e1e1;  color:#444 }
+.component .component-title{color:#111;}
+.component h1{margin:18px auto; text-align:center;}
+.component h2{margin:18px auto; font-size:18px; line-height:1.8;}
+.component h3{margin:18px auto; font-size:16px; line-height:1.8;}
+.component p{font-size:14px; text-indent:2em; line-height:1.6; margin:14px auto 10px }
+.component ol,.component ul{/*margin-bottom:10px;padding-left:2em;*/}
+.component li{line-height:1.6;list-style:none;}
+
+/*** 表格 ***/
+.table{width:100%; border-spacing:0; border-collapse:collapse;}
+.table tr th, .table tr td{padding:8px; text-align:left; border-top:1px solid #ddd;}
+.table-bordered tr th, .table-bordered tr td{border:1px solid #ddd;}
+.table-striped tr:nth-of-type(odd){background-color:#f9f9f9;}
+.table-hover tr:hover{background:#f5f5f5;}
+
+/*** 表格列表 ***/
+.asset-list tr td, .asset-list tr th{text-align:center;}
+.asset-list .logo{width:40px; border-radius:50%; vertical-align:middle;}
+.asset-list .number a{color:#13ae67;}
+.asset-list .icon-exchange{font-size:30px; color:#272637;}
+
+/*** ul+li仿表格列表 ***/
+.flex .table-group .group-list{border-bottom:1px solid #e6ebf5;}
+.flex .table-group .group-list:hover{background:#f5f5f5;}
+.flex .table-group .group-list .list-group{display:flex; display:flexbox; display:-moz-flex; display:-webkit-flex; display:box;  display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-o-box;}
+.flex .table-group .group-list .list-group .list-item{line-height:50px;  width:16.6%; text-align:center; -webkit-box-flex:1; -moz-box-flex:1; -ms-flex:1; -o-box-flex:1; box-flex:1;}
+.flex .table-group .group-list .list-group-wrap{display:block; color:#333;}
+.flex .table-group .group-list .list-group-wrap .logo{width:40px;  border-radius:50%; vertical-align:middle;}
+
+/*** ul+li仿表格列表 ***/
+.unflex .table-group .group-list{border-bottom:1px solid #e6ebf5;}
+.unflex .table-group .group-list:hover{background:#f5f5f5;}
+.unflex .table-group .group-list .list-group{width:100%;overflow: hidden;}
+.unflex .table-group .group-list .list-group .list-item{float:left; line-height:50px; width:16.666%; text-align:center;}
+.unflex .table-group .group-list .list-group-wrap{display:block; color:#333;}
+.unflex .table-group .group-list .list-group-wrap .logo{width:40px;  border-radius:50%; vertical-align:middle;}
+
+/*** 信息列表 ***/
+.info-group li{border-bottom:1px solid #e6ebf5; line-height:32px;}
+.info-group .item-name{display:inline-block; width:100px; margin-bottom:0px; font-weight:400; color:#000;}
+.info-group .item-info{color:#666;}
+.info-groupstriped li:hover{background:#f5f5f5;}
+
+/*** 表单 ***/
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+
+.form-group{margin-bottom:15px;}
+.form-group .control-name{display:inline-block; max-width:100%; margin-bottom:5px;}
+.form-group .form-control{display:block; width:100%; height:34px; padding:6px 12px; font-size:14px; line-height:1.42857143; color:#555; background-color:#fff; border:1px solid #ccc; border-radius:4px;}
+.form-group .control-tip{display:inline-block; max-width:100%; margin-top:5px; color:#666;}
+
+.form-inline .form-group{display:inline-block; margin-bottom:0; vertical-align:middle;}
+.form-inline .form-control{display:inline-block; width:auto; vertical-align:middle;}
+
+.form-horizontal .control-name{margin-bottom:0;}
+.form-horizontal .form-control{display:inline-block; width:auto;}
+
+/*** 按钮 ***/
+.btn{display:block; height:40px; line-height:40px; border-radius:4px; text-align:center; border:none;}
+/*** 实际应用 ***/
+.apply{color:#fff; background:#0081ff;}
+
+
+/*** 弹出层页面 ***/
+.layer{width:500px; margin:0 auto; background:#f5f5f5; border-radius:5px;}
+.layer .layer-header{padding:20px;}
+.layer .layer-header .icon-close{display:block; float:right; width:20px; height:20px; margin-top:-15px; margin-right:5px; color:#c9c9c9; font-size:32px; cursor:pointer;}
+.layer .layer-header .tit{display:block; margin:30px auto 10px; text-align:center; color:#292c33; font-size:20px;}
+.layer .layer-body{padding:15px 50px;}
+.layer .layer-footer{padding:15px 50px 50px;}
+/*** 实际应用 ***/
+.layer-footer .btn-group{height:40px;}
+.layer-footer .btn-group .btn-cen{width:300px; margin:0 auto; color:#fff; background:#0081ff;}
+.layer-footer .btn-group .btn-left{float:left; width:150px; color:#525866; background:inherit; border:1px solid #d5d5d5;}
+.layer-footer .btn-group .btn-right{float:right; width:150px; color:#fff; background:#0081ff;}
+.tradeLayer1 .form-horizontal{margin-top:15px;}
+.tradeLayer1 li{border:0; line-height:40px;}
+.tradeLayer1 li .item-name{width:95px;}
+.tradeLayer1 .form-group:first-child{margin-bottom:30px;}
+.tradeLayer1 .control-name{width:95px;}
+.tradeLayer1 .form-control{width:300px; height:40px;}
+.tradeLayer1 .balance{margin:15px auto 15px; color:#999; text-align:right;}
+.tradeLayer1 .balance span{color:#ae2d13;}
+.tradeLayer2 .trade-info{margin:-24px auto 30px;}
+.tradeLayer2 .trade-info li{padding:10px 0px; border-bottom:1px solid #E5E5E5;}
+.tradeLayer2 .trade-info .item-name{width:80px; margin-bottom:0px; color:#999;}
+.tradeLayer2 .trade-info .item-info{color:#333;}
+.tradeLayer2 .trade-info .bubi-addr{width:320px; margin-left:80px; display:inline-block; margin-top:-32px; word-break:break-all;}
+.tradeLayer2 .trade-info span em{ margin-left:5px; color:#0081ff; font-size:16px; font-style:initial;}
+.tradeLayer3 .form-group{position:relative;}
+.tradeLayer3 .control-name{width:95px;}
+.tradeLayer3 .form-control{width:300px; height:40px;}
+.tradeLayer3 .asset-pwd .tip{position:absolute; top:40px; left: 0px; margin:5px 0px 0px 99px; color:#999; line-height:inherit; font-size:14px;}
+
+/*** 分页 ***/
+.pagination{}
+.pagination li{display:inline-block;}
+.pagination li a{float:left; margin-left:-6px; padding: 6px 12px; border: 1px solid #ddd; color:#23527c; background: #fff;}
+.pagination li:first-child a{border-top-left-radius:4px; border-bottom-left-radius:4px;}
+.pagination li:last-child a{border-top-right-radius:4px; border-bottom-right-radius:4px;}
+.pagination li a:hover{background:#eee;}
+.pagination li.active a{color:#fff; background:#337ab7; border-color:#337ab7;}
+.pagination li.disabled a{cursor:not-allowed;}
