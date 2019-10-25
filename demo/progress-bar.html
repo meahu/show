@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+html, body {
+    position: relative;
+    height: 100%;
+    background: #f1f1f1;
+    
+}
+body {
+    padding: 50px 0 20px;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.code-panel {
+    position: relative;
+    width: 1024px;
+    min-height: calc(100%);
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+.bar {
+    position: relative;
+    width: 300px;
+    height: 16px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.inner {
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background-image: linear-gradient(to right, #FE9605, #FF6600);
+}
+</style>
+<body>
+    <div class="code-panel">
+        <div class="bar">
+            <div class="inner" style="width: 0px"></div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let length = 300; // 总长度
+    let moveLength = 0; // 移动长度
+    let ele = document.querySelector('.inner'); // 移动元素
+    let timer = setInterval(function(){
+        moveLength = length / 100;
+        length = length - moveLength;
+        ele.style.width = parseFloat(ele.style.width) + moveLength + 'px'; // 不可用 ele.clientWidth 代替 ele.style.width，因为 ele.clientWidth 以像素为单位，是整数。
+        // 关闭定时器
+        if(parseFloat(ele.style.width) > 299.5) {
+            clearInterval(timer);
+        }
+    }, 30)
+</script>
+</html>
