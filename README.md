@@ -9,4 +9,7 @@
 
 ## 案例
 进度条：https://meahu.github.io/show/demo/progress-bar.html
+
 滚动播报：https://meahu.github.io/show/demo/scroll.html
+
+文章模板：https://meahu.github.io/show/demo/article/永远的蝴蝶.html
